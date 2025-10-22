@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
             return stationRoad.ar.includes(`${searchKeyword}`);
           })
           .forEach((stationRoad) => {
-            const table = `<li>
+            const List = `<li>
                   ${stationRoad.sna.replace("YouBike2.0_", "")}
                 </b>
                 <br />
                 <small>${stationRoad.ar}</small>
             </li>`;
-            bikeList.insertAdjacentHTML("beforeend", table); //.insertAdjacentHTML(插入的位置,插入的文字)
+            bikeList.insertAdjacentHTML("beforeend", List); //.insertAdjacentHTML(插入的位置,插入的文字)
           });
       });
   });
